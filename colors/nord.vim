@@ -411,4 +411,16 @@ hi! link jsFuncCall Function
 hi! link jsFuncParens Delimiter
 hi! link jsNoise Delimiter
 hi! link jsPrototype Keyword
+hi! link jsClassKeyword Keyword
+hi! link jsExtendsKeyword Keyword
+hi! link jsSuper Keyword
+hi! link jsImport Keyword
+hi! link jsFrom Keyword
+hi! link jsArrowFunction Keyword
+hi! link jsOperator Keyword
+hi! link jsStorageClass Keyword
+hi! link jsFunction Keyword
+hi! link jsThis SpecialChar
 hi! link jsRegexpString SpecialChar
+hi! link jsVariableDef Identifier
+hi! link jsFuncArgs Normal
