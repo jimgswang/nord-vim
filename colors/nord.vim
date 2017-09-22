@@ -174,7 +174,7 @@ call s:hi("StorageClass", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("String", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Structure", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Tag", s:nord4_gui, "", "", "", "", "")
-call s:hi("Todo", s:nord13_gui, "", s:nord13_term, "NONE", "", "")
+call s:hi("Todo", s:nord13_gui, "NONE", s:nord13_term, "NONE", "", "")
 call s:hi("Type", s:nord9_gui, "", s:nord9_term, "", "NONE", "")
 call s:hi("Typedef", s:nord9_gui, "", s:nord9_term, "", "", "")
 hi! link Macro Define
@@ -379,6 +379,8 @@ hi! link yamlDocumentStart Keyword
 " > w0rp/ale
 call s:hi("ALEWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
 call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("ALEError" , s:nord11_gui, "", s:nord11_term, "", "underline", "")
+call s:hi("ALEWarning" , s:nord11_gui, "", s:nord11_term, "", "underline", "")
 
 " GitGutter
 " > airblade/vim-gitgutter
@@ -421,6 +423,7 @@ hi! link jsOperator Keyword
 hi! link jsStorageClass Keyword
 hi! link jsFunction Keyword
 hi! link jsThis SpecialChar
+hi! link jsGlobalObjects SpecialChar
 hi! link jsRegexpString SpecialChar
 hi! link jsVariableDef Identifier
 hi! link jsFuncArgs Normal
